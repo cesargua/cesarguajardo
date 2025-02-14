@@ -22,21 +22,20 @@ import MUILogo from "./SVGLogos/MUILogo";
 
 
 interface Props {
-  handleOpen: () => void;
+  handleOpen: (imageUrl:string) => void;
 
 }
 
 const ViceroyCard: React.FC<Props> = ({handleOpen}) => {
   return (
     <div className="flex items-center justify-center px-4 lg:px-12">
-      <Card className="w-full h-full object-cover max-w-[64rem] h-[32rem] flex flex-row bg-[#5c6a56] shadow-lg">
+      <Card className="w-full h-full object-cover max-w-[64rem] h-[32rem] flex flex-row bg-[#5c6a56] shadow-lg" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
         {/* Card Header */}
         <CardHeader
           shadow={false}
           floated={false}
-          className="m-0 w-1/2 shrink-0 rounded-r-none"
-        >
-          <Carousel>
+          className="m-0 w-1/2 shrink-0 rounded-r-none" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}        >
+          <Carousel placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             <img
               src="/ViceroyScreenshots/Viceroy1.png"
               alt="Card image"
@@ -59,13 +58,12 @@ const ViceroyCard: React.FC<Props> = ({handleOpen}) => {
         </CardHeader>
 
         {/* Card Body */}
-        <CardBody className="flex flex-col justify-center text-left px-6">
+        <CardBody className="flex flex-col justify-center text-left px-6" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           {/* Title with GitHub Icon */}
           <div className="flex items-center space-x-3 mb-4">
             <Typography
               variant="h5"
-              className="text-white text-4xl font-bold font-lato"
-            >
+              className="text-white text-4xl font-bold font-lato" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
               ViceRoy
             </Typography>
             <a
@@ -79,7 +77,7 @@ const ViceroyCard: React.FC<Props> = ({handleOpen}) => {
           </div>
 
           {/* Description */}
-          <Typography className="text-white text-sm font-lato mb-4">
+          <Typography className="text-white text-sm font-lato mb-4" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           A concept e-commerce application designed for users to trade, sell, and exchange cryptocurrency seamlessly. 
           The platform offers real-time news and trends to help users stay informed about the crypto market. 
           Additionally, users can view interactive graphs displaying market trends and monitor their earnings in real-time, 
@@ -109,7 +107,7 @@ const ViceroyCard: React.FC<Props> = ({handleOpen}) => {
     rel="noopener noreferrer"
     className="text-white text-3xl"
   >
-    <ViteLogo title="Vite" />
+    <ViteLogo />
   </a>
 
   {/* Material UI */}
@@ -119,7 +117,7 @@ const ViceroyCard: React.FC<Props> = ({handleOpen}) => {
     rel="noopener noreferrer"
     className="text-white text-3xl"
   >
-    <MUILogo title="Material UI (MUI)" />
+    <MUILogo  />
   </a>
 
   {/* Firebase */}
@@ -129,7 +127,7 @@ const ViceroyCard: React.FC<Props> = ({handleOpen}) => {
     rel="noopener noreferrer"
     className="text-white text-3xl"
   >
-    <FirebaseLogo title="Firebase" />
+    <FirebaseLogo  />
   </a>
 
   {/* JavaScript */}

@@ -50,7 +50,7 @@ export default function Projects() {
       </div>
 
       <div className="py-5">
-        <Carousel transition={{ duration: 2 }} className="rounded-xl">
+        <Carousel transition={{ duration: 2 }} className="rounded-xl" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           <AtelierCard handleOpen={handleOpen} />
           <ViceroyCard handleOpen={handleOpen} />
         </Carousel>
@@ -58,10 +58,8 @@ export default function Projects() {
 
       {/* Fullscreen Modal for Image */}
       {selectedImage && (
-         <Dialog size="xl" open={selectedImage} handler={handleOpen}>
-                <DialogHeader className="justify-between">
-                </DialogHeader>
-                <DialogBody>
+         <Dialog size="xl" open={Boolean(selectedImage)} handler={handleOpen} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                <DialogBody placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                   <img
                     alt="Project Image Expanded"
                     className="h-auto max-h-[48rem] w-full rounded-lg object-contain"

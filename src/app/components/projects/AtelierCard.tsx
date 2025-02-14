@@ -285,18 +285,17 @@ import { DiReact, DiPostgresql, DiAws, DiJsBadge, DiCss3, DiNodejs } from "react
 import ExpressLogo from "./SVGLogos/ExpressLogo";
 
 interface Props {
-  handleOpen: () => void;
+  handleOpen: (imageUrl:string) => void;
 }
 
 const AtelierCard: React.FC<Props> = ({ handleOpen }) => {
   return (
     <div className="flex items-center justify-center px-4 lg:px-12">
       <Card
-        className="w-full h-full object-cover max-w-[64rem] h-[32rem] flex flex-row bg-[#5c6a56] shadow-lg"
-      >
+        className="w-full h-full object-cover max-w-[64rem] h-[32rem] flex flex-row bg-[#5c6a56] shadow-lg" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}      >
         {/* Card Header */}
-        <CardHeader shadow={false} floated={false} className="m-0 w-1/2 shrink-0 rounded-r-none">
-          <Carousel>
+        <CardHeader shadow={false} floated={false} className="m-0 w-1/2 shrink-0 rounded-r-none" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+          <Carousel placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             {/* Click the image to open modal */}
             <img
               src="/AtelierScreenshot/Atelier1.png"
@@ -326,9 +325,9 @@ const AtelierCard: React.FC<Props> = ({ handleOpen }) => {
         </CardHeader>
 
         {/* Card Body */}
-        <CardBody className="flex flex-col justify-center text-left px-6">
+        <CardBody className="flex flex-col justify-center text-left px-6" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           <div className="flex items-center space-x-3 mb-4">
-            <Typography variant="h5" className="text-white text-4xl font-bold font-lato">
+            <Typography variant="h5" className="text-white text-4xl font-bold font-lato" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
               Atelier
             </Typography>
             <a href="https://github.com/cesargua/AtelierAPI" target="_blank" rel="noopener noreferrer" className="text-white text-3xl">
@@ -340,7 +339,7 @@ const AtelierCard: React.FC<Props> = ({ handleOpen }) => {
           </div>
 
                     {/* Description */}
-           <Typography className="text-white text-sm font-lato mb-4">
+           <Typography className="text-white text-sm font-lato mb-4" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           A concept e-commerce application that showcases a variety of products and offers key features to enhance the user experience. It includes a Related Items section that displays products similar to the one currently being viewed, helping users discover relevant options. 
            The application also features an Outfit List, allowing users to save and organize their favorite items for future reference. A Q&A section provides a platform for users to ask and answer questions about products, while the Ratings and Reviews section enables users to leave feedback and read reviews to make informed purchasing decisions.
            </Typography>
