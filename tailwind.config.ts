@@ -1,4 +1,10 @@
+import type { Config } from "tailwindcss";
 const withMT = require("@material-tailwind/react/utils/withMT");
+/** @type {import('tailwindcss').Config} */
+
+
+
+
 
 module.exports = withMT({
   content: [
@@ -9,14 +15,26 @@ module.exports = withMT({
   theme: {
     extend: {
       fontFamily: {
-        geo: ["var(--font-geo)", "sans-serif"], // ✅ Use CSS variable
-        orbitron: ["Orbitron", "sans-serif"],
+          geo: ["var(--font-geo)", "sans-serif"], // ✅ Use CSS variable
+          orbitron: ['Orbitron','sans-serif']
       },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
     },
+    keyframes: {
+      scroll: {
+        '0%': { transform: 'translateX(0)' },
+        '100%': { transform: 'translateX(-100%)' },
+      },
+    },
+    animation: {
+      scroll: 'scroll 60s linear infinite',
+    },
   },
-  plugins: [require("@tailwindcss/forms")],
+  plugins: [require('@tailwindcss/forms')],
 });
+
+
+
