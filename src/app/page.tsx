@@ -14,9 +14,11 @@ export default function Home() {
 
   const [about, setAbout] = useState(false)
 
-  function handleAbout(){
-    setAbout(!about)
-  }
+  const handleAbout = (event?: React.MouseEvent<HTMLAnchorElement>) => {
+    if (event) event.preventDefault(); // ✅ Prevents page jumping if href="#"
+    // Your existing logic for handling About section toggle
+    setAbout((prev) => !prev);
+  };
 
   return (
     <div>

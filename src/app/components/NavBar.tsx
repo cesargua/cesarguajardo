@@ -6,7 +6,7 @@ const geo = Geo({ subsets: ['latin'], weight: '400' }); //Specify the correct we
 
 interface MyComponentProps {
   about: boolean; // Define the 'about' prop type
-  handleAbout: void;
+  handleAbout: (event?: React.MouseEvent<HTMLAnchorElement>) => void;
 }
 
 const NavBar:React.FC<MyComponentProps> = ({about, handleAbout}) => {
