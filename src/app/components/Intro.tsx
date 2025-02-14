@@ -6,7 +6,7 @@ import React, {useState} from "react";
 
 const geo = Geo({ subsets: ['latin'], weight: '400' }); //Specify the correct weight
 
-import { IconButton } from "@material-tailwind/react";
+import { IconButton, IconButtonProps } from "@material-tailwind/react"; 
 import { CgMail } from "react-icons/cg";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import ResumeLogo from './projects/SVGLogos/ResumeLogo'
@@ -46,27 +46,62 @@ const Intro: React.FC<{ about: boolean; handleAbout: () => void }> = ({ about, h
           Full-Stack Software Developer
         </h2>
         <div className="p-3 flex space-x-4">
-          <a href={`mailto:${email}`} >
-            <IconButton >
+        <IconButton
+          placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} {...({} as IconButtonProps)} // ✅ Explicitly cast to correct type
+          size="lg"
+          variant="filled"
+          onClick={() => { window.location.href = `mailto:${email}`; } }
+          className="hover:opacity-80 transition-opacity duration-200"            >
               <CgMail className="text-2xl hover:opacity-80 transition-opacity duration-200"  />
             </IconButton>
-          </a>
-          <a href="https://www.linkedin.com/in/cesarpro/" target="_blank" >
-            <IconButton >
-              <FaLinkedin className="text-2xl hover:opacity-80 transition-opacity duration-200"/>
-            </IconButton>
-            </a>
-            <a href="https://github.com/cesargua" target="_blank" >
-            <IconButton >
-              <FaGithub className="text-2xl hover:opacity-80 transition-opacity duration-200"/>
-            </IconButton>
-            </a>
-          <a href='https://docs.google.com/document/d/e/2PACX-1vRohL9n3VFHynaUChowbqo7i6ghrEZb_YbqPsE3Mhef19F0sAz0UhHGIb1dAfoO8lA4hlv-WeIMC6s1/pub'
-            target="_blank">
-          <IconButton >
+            <IconButton
+            placeholder={undefined}
+            onPointerEnterCapture={undefined}
+            onPointerLeaveCapture={undefined}
+            {...({} as IconButtonProps)} // ✅ Explicitly cast to correct type
+            size="lg"
+            variant="filled"
+            color="black"
+            onClick={() => window.open("https://www.linkedin.com/in/cesarpro/", "_blank")}
+            className="hover:opacity-80 transition-opacity duration-200"
+          >
+            <FaLinkedin className="text-2xl" />
+          </IconButton>
+
+          <IconButton
+            placeholder={undefined}
+            onPointerEnterCapture={undefined}
+            onPointerLeaveCapture={undefined}
+            {...({} as IconButtonProps)}
+            size="lg"
+            variant="filled"
+            color="black"
+            onClick={() => window.open("https://github.com/cesargua", "_blank")}
+            className="hover:opacity-80 transition-opacity duration-200"
+          >
+            <FaGithub className="text-2xl" />
+          </IconButton>
+
+          <IconButton
+            placeholder={undefined}
+            onPointerEnterCapture={undefined}
+            onPointerLeaveCapture={undefined}
+            {...({} as IconButtonProps)}
+            size="lg"
+            variant="filled"
+            color="gray"
+            onClick={() =>
+              window.open(
+                "https://docs.google.com/document/d/e/2PACX-1vRohL9n3VFHynaUChowbqo7i6ghrEZb_YbqPsE3Mhef19F0sAz0UhHGIb1dAfoO8lA4hlv-WeIMC6s1/pub",
+                "_blank"
+              )
+            }
+            className="hover:opacity-80 transition-opacity duration-200"
+          >
             <ResumeLogo />
           </IconButton>
-          </a>
+
+
         </div>
       </div>
 
