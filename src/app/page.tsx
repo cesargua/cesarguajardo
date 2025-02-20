@@ -7,6 +7,7 @@ import Skills from "./components/Skills"
 import Experience from './components/Experience';
 import Projects from "./components/Projects";
 import PageTransition from "./components/PageTransition";
+import SkillsV2 from "./components/SkillsV2";
 
 // import {useState} from "react"
 
@@ -26,7 +27,7 @@ export default function Home() {
       <PageTransition>
             <NavBar  about={about} handleAbout={handleAbout}/>
             <Intro about={about} handleAbout={handleAbout} />
-            <Skills/>
+            <SkillsV2/>
             <Experience />
             <Projects />
         </PageTransition>

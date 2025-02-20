@@ -33,6 +33,23 @@ import AtelierCard from "./projects/AtelierCard";
 import ViceroyCard from "./projects/ViceroyCard";
 import { Carousel, Dialog, DialogHeader, DialogBody } from "@material-tailwind/react";
 
+const cards = [
+ {
+    name: "Atelier",
+    github_icons: [{},{}],
+    descriptions: "A concept e-commerce application that showcases a variety of products and offers key features to enhance the user experience. It includes a Related Items section that displays products similar to the one currently being viewed, helping users discover relevant options. The application also features an Outfit List, allowing users to save and organize their favorite items for future reference. A Q&A section provides a platform for users to ask and answer questions about products, while the Ratings and Reviews section enables users to leave feedback and read reviews to make informed purchasing decisions.",
+    images: [],
+    icons: [{},{}]
+
+ },
+ 
+ {
+
+
+ }
+
+]
+
 export default function Projects() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
