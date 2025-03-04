@@ -53,7 +53,7 @@ export default function Experience() {
             {/* Placer Section */}
             <div className="flex items-center justify-center mt-20 space-x-10">
                 <img
-                    src="/images/placer.png"
+                    src="/images/Placer.png"
                     className="w-60 h-60 md:w-60 md:h-60 lg:w-80 lg:h-80 rounded-full cursor-pointer"
                     alt="Placer"
                 />
