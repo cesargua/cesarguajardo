@@ -16,7 +16,8 @@ module.exports = withMT({
     extend: {
       fontFamily: {
           geo: ["var(--font-geo)", "sans-serif"], // ✅ Use CSS variable
-          orbitron: ['Orbitron','sans-serif']
+          orbitron: ['Orbitron','sans-serif'],
+          console: ["Consolas"],
       },
       colors: {
         background: "var(--background)",

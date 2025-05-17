@@ -32,16 +32,16 @@ const About: React.FC<{ about: boolean }> = ({ about }) => {
       <div
         ref={aboutRef}
         className={`p-3 bg-gray-800 rounded-lg w-full text-white transition-all duration-[1000ms] ease-in-out ${
-          startAnimation ? "opacity-100 translate-x-[90%]" : "opacity-0 translate-x-[180%]"
+          startAnimation ? "opacity-100 translate-x-[70%]" : "opacity-0 translate-x-[180%]"
         }`}
       >
-        <h1 className="text-4xl font-geo font-bold">About Me</h1>
-        <p className="font-geo text-base">
-        Hi! I'm Cesar, a Full-Stack Software Developer with a passion for building efficient and scalable solutions and problem solving. I graduated from UC San Diego in 2022 with a degree in Computer Science, where I gained a strong foundation in core principles such as Data Structures, Database Development, and Full-Stack Engineering. During my academic journey, I also crafted my ability to collaborate in teams, tackle complex problems, and develop software that balances functionality with simplicity.
-Throughout my young career, I’ve worked on multiple projects across various roles, leveraging technologies such as JavaScript, Python, and SQL, among others. My engineering philosophy revolves around simplicity and cohesion—ensuring that solutions remain intuitive, maintainable, and efficient.
-Above all, I value collaboration and adopt a team-first mindset, believing that collective achievements are more meaningful than individual successes. Whether it's designing scalable applications, optimizing databases, or enhancing user experiences, I am dedicated to contributing to projects that make an impact. As a skilled Full-Stack Developer, I’m here to help bring ideas to life!
-
-
+        <h1 className="text-5xl font-geo font-bold">About Me</h1>
+        <p className="font-geo text-xl">
+            I’m a UC San Diego ’22 CS graduate (Go Tritons!) and Full‑Stack Developer who builds efficient, scalable applications with JavaScript, Python,
+            SQL, and more. 
+            <br/> I focus on simplicity and cohesion—writing intuitive, maintainable code—and thrive in collaborative, 
+            team‑first environments. Whether I’m designing user‑first interfaces, optimizing databases, 
+            or architecting back‑end services, my goal is to deliver impactful solutions that bring ideas to life!
         </p>
       </div>
     )

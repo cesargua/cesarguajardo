@@ -64,7 +64,7 @@ export default function Experience() {
                         </h2>
                     </a>
                     <h3 className="text-2xl font-geo text-white text-customGray">
-                        Web Developer, Clerk
+                        Software Engineer
                     </h3>
                     <p className="text-xl font-geo text-white text-customGray">
                         June 20' - Present
@@ -113,9 +113,7 @@ export default function Experience() {
                         </li>
                         <li>Forecasted risk factors & survey scores for program participants using techniques including Dynamic Mode Decomposition (DMD), Deep Learning w/ Neural Networks, and Support Vector Machine (SVM), employing Python w/ Numpy, Pandas, & Tensorflow.
                         </li>
-                        <li>Developed targeted support solutions based on program members' and clients' predictive survey scores.
-
-</li>
+                        <li>Developed targeted support solutions based on program members' and clients' predictive survey scores.</li>
                     </ul>
                 </div>
             </div>

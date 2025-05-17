@@ -8,6 +8,7 @@ import Experience from './components/Experience';
 import Projects from "./components/Projects";
 import PageTransition from "./components/PageTransition";
 import SkillsV2 from "./components/SkillsV2";
+// import ExperienceV2 from './components/ExperienceV2';
 
 // import {useState} from "react"
 
@@ -28,7 +29,7 @@ export default function Home() {
             <NavBar  about={about} handleAbout={handleAbout}/>
             <Intro about={about} handleAbout={handleAbout} />
             <SkillsV2/>
-            <Experience />
+            <Experience/>
             <Projects />
         </PageTransition>
       </main>
