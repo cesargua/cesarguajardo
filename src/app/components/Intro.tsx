@@ -162,7 +162,7 @@ export default function Intro({ about, handleAbout }: IntroProps) {
               text-6xl 
               font-bold 
               ${geo.className} 
-              text-white`}>
+             text-white`}>
             Cesar Guajardo
           </h1>
           <h2 className={`mt-2 text-2xl font-semibold ${geo.className} text-customGray`}>
@@ -173,37 +173,31 @@ export default function Intro({ about, handleAbout }: IntroProps) {
               size="lg"
               variant="filled"
               onClick={() => (window.location.href = `mailto:${email}`)}
-              className="hover:opacity-80 transition-opacity"
-            >
+              className="hover:opacity-80 transition-opacity" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
               <CgMail className="text-2xl" />
             </IconButton>
             <IconButton
               size="lg"
               variant="filled"
               color="black"
-              onClick={() => window.open("https://www.linkedin.com/in/cesarpro/", "_blank")}
-            >
+              onClick={() => window.open("https://www.linkedin.com/in/cesarpro/", "_blank")} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
               <FaLinkedin className="text-2xl" />
             </IconButton>
             <IconButton
               size="lg"
               variant="filled"
               color="black"
-              onClick={() => window.open("https://github.com/cesargua", "_blank")}
-            >
+              onClick={() => window.open("https://github.com/cesargua", "_blank")}  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
               <FaGithub className="text-2xl" />
             </IconButton>
             <IconButton
               size="lg"
               variant="filled"
               color="gray"
-              onClick={() =>
-                window.open(
-                  "https://docs.google.com/document/d/e/2PACX-1vRohL9n3VFHynaUChowbqo7i6ghrEZb_YbqPsE3Mhef19F0sAz0UhHGIb1dAfoO8lA4hlv-WeIMC6s1/pub",
-                  "_blank"
-                )
-              }
-            >
+              onClick={() => window.open(
+                "https://docs.google.com/document/d/e/2PACX-1vRohL9n3VFHynaUChowbqo7i6ghrEZb_YbqPsE3Mhef19F0sAz0UhHGIb1dAfoO8lA4hlv-WeIMC6s1/pub",
+                "_blank"
+              )} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
               <ResumeLogo />
             </IconButton>
           </div>
