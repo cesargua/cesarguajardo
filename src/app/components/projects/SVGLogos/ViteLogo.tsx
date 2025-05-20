@@ -3,7 +3,7 @@
 const ViteLogo: React.FC = () => {
     return (
       <img
-         src="/ViteJs.svg"
+         src="/vitejs.svg"
         alt="Vitejs.js Logo"
         className="h-12 w-auto hover:opacity-80 transition-opacity duration-200"
         title="Vite"
